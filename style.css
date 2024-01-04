@@ -1,0 +1,227 @@
+body {
+    .light-theme {
+      background: #fff;
+      color: #333;
+    }
+    .dark-theme {
+      background: #000;
+      color: #ddd
+    }
+  }
+  
+  #main_page {
+    width: 80% ;  height: auto ;
+    margin: 0px auto ;  
+    color: #00037b ; font-weight: bolder ;
+    text-align: center ;
+    background: #a2d7ff87 url(https://apon-tbp.github.io/TPfestival2023_q/images/TPfes_bg.png) ;
+    background-size: contain ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    border: solid 3px #4987ff;
+  }
+  button:hover {
+    cursor: pointer ;
+  }
+  /************************** section cts */
+  #cts{
+    text-align: center ;
+    padding: 0px ;
+  }
+  #cts{
+    /* background-color: #006cff87 ; */
+    margin: auto ;
+  }
+  #cts h1{
+    font-size: 300% ;
+    color: white ;
+    text-shadow: 0 0 2px blue;
+    background-color: #4987ff ;
+    margin: 0 ;
+  }
+  
+  #cts h2{
+    color: brown ;
+    margin: 0 ;
+    text-shadow: 2px 2px white ;
+    /*border-bottom: solid 3px #4987ff ;
+    background-color: #ffffff80 ;*/
+  }
+  /************************** section present */
+  #present{
+    display: none ; /* 初期値はnone。正解したらjsでblock指定 */
+    width: 100% ;
+  }
+  #present h2{
+    color: #ff6161 ;
+    font-size: 20pt ;
+    background-color: #ffffff90 ;
+    border-top: white 3px solid ;
+    border-bottom: white 3px solid ;
+  }
+  #present .dlbyn {
+    display: block ;
+    height: 50px ; width: 200px ;
+    background-color: #00037b ;
+    border: 2px solid white ;
+    color: white ;
+    text-decoration: none ;
+    text-align: center ;
+    vertical-align: middle ;
+    line-height: 25px ;
+    font-size: 15px ;
+    padding: 3px ; margin: 10px  auto ;
+  }
+  /************************** section tweet */
+  #tweet{
+    display: none ;
+  }
+  /************************** section pass */
+  #pass {
+    display: block ;
+    margin: 10px auto ; padding: 5px ;
+    width:300px ;
+    text-align: center ;
+    font-size: 16pt ;
+    color: #00b5ff ;
+    font-weight: bold ;
+    border: solid ;
+    background-color: #FFFFFF80 ;
+  }
+  input#pass_in{
+    font-size: large ;
+    text-align: center ;
+  }
+  
+  /************************** section tbl */
+  #tbl{
+    height: auto ;
+    margin: 0 auto ;
+    border: 2px  solid brown ;
+    width: 60% ;
+  }
+  #tbl .text{
+    color: brown ;
+    font-size :15px ;
+  }
+  flex_gr{
+    display:flex;
+    justify-content: center;
+  }
+  table {
+    margin: auto ; 
+    padding: 10px ;
+  }
+  
+  table td {
+    width: 30px ;  height: 30px ;
+    font-size: 10px ;
+    text-align: center ;  vertical-align: middle ;
+  }
+  td.b {
+    border: 1px solid black ;
+    }
+  td#v1-1_h1-1 {  border: 3px solid black ;  }
+  td#v1-2 {  border: 3px solid black ;  }
+  td#v1-3 {  border: 3px solid black ;  }
+  td#v1-4 {  border: 3px solid black ;  }
+  td#v1-5_h3-2 {  border: 3px solid black ;  }
+  
+  /************************** section tbl xwinpt */
+  tbl #xw-input {
+    float: right ;
+  }
+  /************************** footer */
+  footer {
+    margin: 10px auto ;
+    font-size: 15px ;
+    clear: both ;
+  }
+  
+  /************************** footer links */
+  div #links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #links p.link{
+    display: inline-block ;
+    width: 200px ; height: 50px ; line-height: 25px ;
+    margin: 10px ; 
+    background-color: #00adbe ;
+    text-align: center ;
+    border-bottom: white solid 3px ;
+  }
+  #links a{
+    text-decoration: none ;
+    color: white ;
+    font-weight: bold ;  
+  }
+  #links p.link:hover{
+    background-color: #61dae6 ;
+    cursor: pointer ;
+  }
+  
+  /************************* fotter ctredit */
+  #credit{
+  /*   color: #00037b ; */
+  }
+  /************************* others */
+  .atention{
+    font-size: 150% ;
+    color: #f20aff ;
+    font-weight: bold ;
+    text-shadow: 0px 3px white ;
+  }
+  
+  
+  @media screen and (max-width: 959px) {
+    body{
+       font-size: smaller ;
+       margin: 5% auto ;
+    }
+    #cts h1{
+       font-size: 300% ;
+    }
+  #tbl{
+    height: 600px;
+    margin: 0 auto ;
+    width: 100% ;
+    border: none ;
+  }
+    #wx{
+      width: 100% ;
+    }
+    #xw-input{
+      width: 100% ;
+    }
+  
+    #links p.link{
+       width: 100px ; height: 40px; line-height: 20px;
+       font-size: 10px ; 
+    }
+   
+  @media screen and (max-width: 480px) {
+    body{
+       font-size: xx-smaller ;
+       margin: 0 ;
+      }
+    #cts h1{
+      font-size: 150% ;
+    }
+    #cts h2{
+      font-size: 100% ;
+    }
+    #pass {
+    margin: 5px auto ; padding: 5px ;
+    width: 90% ;
+    font-size: 10pt ;
+    font-weight: bold ;
+    }
+    #pass input#pass_in{
+      width: 90% ;
+    }
+    #links a{
+      width: 100% ; height: 20px; line-height: 10px ;
+      font-size: 8px ; 
+    }
