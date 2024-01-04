@@ -99,27 +99,3 @@ function sel_chg() {
 	link.download = fileName;
   }
   
-  function dl_pcno() {
-	downloadImage(
-	  'https://drive.google.com/file/d/1lQ_lGyh5JfjtHBZvF17Lglv2iLtmSIIb/view?usp=sharing',
-	  'TOBIRAPOLIS祭2023クロスワード正解_PC用.png',
-	  'dlpcno'
-	);
-  }
-  
-  function dl_pc4k() {
-	downloadImage(
-	  'https://drive.google.com/file/d/1go_lMx9QYdmqsY5P5jXWo2kOdT_pjbZf/view?usp=sharing',
-	  'TOBIRAPOLIS祭2023クロスワード正解_PC用(4k).png',
-	  'dlpc4k'
-	);
-  }
-  
-  function dl_mobi() {
-	downloadImage(
-	  'https://drive.google.com/file/d/1w1r5-Qn-lDvTntHVeiraAdj0v6v2mzm1/view?usp=sharing',
-	  'TOBIRAPOLIS祭2023クロスワード正解_スマホ用.png',
-	  'dlmobi'
-	);
-  }
-  
